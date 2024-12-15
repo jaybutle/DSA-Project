@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Graph - Dijkstra's Algorithm</title>
+    <title>Graph with Shortest Path and Depot Storage</title>
     <link rel="stylesheet" href="style.css">
     <!-- Include Vis.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Interactive Graph with Dijkstra's Algorithm</h1>
+        <h1>Interactive Graph with Dijkstra's Algorithm and Depot Storage</h1>
     </header>
 
     <main>
@@ -28,9 +28,16 @@
             <button onclick="findShortestPath()">Calculate Shortest Path</button>
         </section>
 
+        <section class="input-section">
+            <h3>Depot Storage Management</h3>
+            <label for="storageAmount">Storage Amount (kg):</label>
+            <input type="number" id="storageAmount" placeholder="Enter amount to store (e.g., 7000)">
+            <button onclick="findNearbyDepots()">Find Nearby Depots</button>
+        </section>
+
         <!-- Output Section -->
         <section class="output-section">
-            <h3>Shortest Path Result</h3>
+            <h3>Output</h3>
             <div id="output"></div>
         </section>
     </main>
@@ -38,3 +45,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
