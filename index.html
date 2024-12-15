@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graph - Dijkstra's Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Vis.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Graph with Dijkstra's Algorithm</h1>
+    </header>
+
+    <main>
+        <!-- Graph Visualization -->
+        <div id="graph" style="width: 800px; height: 500px; border: 1px solid lightgray;"></div>
+
+        <!-- User Input Section -->
+        <section class="input-section">
+            <h3>Find Shortest Path</h3>
+            <label for="sourceNode">Source Node:</label>
+            <input type="text" id="sourceNode" placeholder="Enter node name (e.g., A)">
+            <label for="destinationNode">Destination Node:</label>
+            <input type="text" id="destinationNode" placeholder="Enter node name (e.g., C)">
+            <button onclick="findShortestPath()">Calculate Shortest Path</button>
+        </section>
+
+        <!-- Output Section -->
+        <section class="output-section">
+            <h3>Shortest Path Result</h3>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
